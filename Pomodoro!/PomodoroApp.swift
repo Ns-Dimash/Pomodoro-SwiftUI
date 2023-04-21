@@ -1,10 +1,10 @@
 import SwiftUI
 
 @main
-struct lecture_05App: App {
+struct PomodoroApp: App {
     var body: some Scene {
         WindowGroup {
-            SixthPage()
+            PomodoroFirst()
         }
     }
 }

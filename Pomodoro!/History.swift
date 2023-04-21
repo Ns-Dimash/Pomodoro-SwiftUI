@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct SevensPage: View {
+struct History: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = .white
     }
     var body: some View {
-        TabView{
             ZStack{
-                FifthPage.bg
+                SetTime.bg
                 
                 VStack{
                     Spacer()
@@ -31,19 +30,6 @@ struct SevensPage: View {
                 }.padding(.bottom,100)
                 
             }
-            .tabItem {
-                Label("Main", image: "home2")
-            }
-            Text("Second")
-                .tabItem {
-                    Label("Settings",image: "secondIcon") // redundant
-                }
-            Text("Third")
-                .tabItem {
-                    Label("History", image: "last")
-                }
-            
-        }.accentColor(.white)
         
     }
     
@@ -86,8 +72,8 @@ struct Dates:View{
     }
 }
 
-struct SevensPage_Previews: PreviewProvider {
+struct History_Previews: PreviewProvider {
     static var previews: some View {
-        SevensPage()
+        History()
     }
 }
